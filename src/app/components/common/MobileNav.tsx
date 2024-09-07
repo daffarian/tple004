@@ -19,7 +19,7 @@ export default function MobileNav() {
           </span>
         </button>
         <nav
-          className={clsx("bg-black shadow-2xl !z-20 transition-all", {
+          className={clsx("bg-black shadow-3xl shadow-white ring-1 ring-zinc-900 !z-20 transition-all", {
             "w-full h-5/6 rounded-bl-full !z-20 duration-1000 opacity-100 fixed top-0 right-0":
               isOpenNav,
             "w-1 h-1 fixed duration-500 delay-200 -top-5 -right-5": !isOpenNav,
