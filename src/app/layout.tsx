@@ -27,12 +27,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-800`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-900`}
       >
         <MobileNav />
         <main className="">
-          <div className="w-full h-56 bg-zinc-800 rounded-b-3xl flex fixed top-14 z-[-1] justify-center items-center">
-            <h1 className="font-bold text-xl text-zinc-200 mb-14 top-42">
+          <div
+            style={{ backgroundImage: "url(/images/hero-bg.jpeg" }}
+            className="w-full h-44 rounded-b-3xl flex fixed bg-cover bg-bottom top-16 z-[-1] justify-center items-center"
+          >
+            <div className="absolute w-full h-full bg-black/40"></div>
+            <h1 className="font-bold absolute text-xl text-white translate-y-14 top-42">
               Informasi kelas 07TPLE004
             </h1>
           </div>

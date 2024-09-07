@@ -111,7 +111,7 @@ export default function Particle() {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
-        className="absolute w-full h-full"
+        className="!absolute top-0 !overflow-hidden"
       />
     );
   }
