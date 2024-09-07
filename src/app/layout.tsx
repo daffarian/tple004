@@ -32,7 +32,7 @@ export default function RootLayout({
         <MobileNav />
         <main className="">
           <div className="w-full h-56 bg-zinc-900 rounded-b-3xl flex fixed top-14 z-[-1] justify-center items-center">
-              <h1 className="font-bold  text-transparent mb-14 top-42 relative bg-clip-text bg-gradient-to-r from-red-500  to-blue-500 via-purple-500">
+              <h1 className="font-bold  text-textDark mb-14 top-42 relative">
                 Informasi kelas 07TPLE004
               </h1>
           </div>

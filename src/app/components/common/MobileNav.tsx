@@ -5,7 +5,7 @@ export default function MobileNav() {
   const [isOpenNav, setIsOpenNav] = useState<Boolean>(false);
   return (
     <header className="container fixed bg-zinc-900 py-4 flex flex-row justify-between items-center">
-      <span className="text-textDark font-bold">07TPLE004</span>
+      <span className="bg-clip-text bg-gradient-to-r from-red-500  to-blue-500 via-purple-500 text-transparent font-bold">07TPLE004</span>
       <div className="relative flex justify-center items-center">
         <button
           className={clsx(
