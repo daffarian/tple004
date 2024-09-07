@@ -27,12 +27,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-900`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-800`}
       >
         <MobileNav />
         <main className="">
-          <div className="w-full h-56 bg-zinc-900 rounded-b-3xl flex fixed top-14 z-[-1] justify-center items-center">
-            <h1 className="font-bold text-xl text-zinc-200 mb-14 top-42 relative">
+          <div className="w-full h-56 bg-zinc-800 rounded-b-3xl flex fixed top-14 z-[-1] justify-center items-center">
+            <h1 className="font-bold text-xl text-zinc-200 mb-14 top-42">
               Informasi kelas 07TPLE004
             </h1>
           </div>
