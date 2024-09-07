@@ -35,8 +35,8 @@ export default function RootLayout({
             style={{ backgroundImage: "url(/images/hero-bg.jpeg" }}
             className="w-full h-44 rounded-b-3xl flex fixed bg-cover bg-bottom top-16 z-[-1] justify-center items-center"
           >
-            <div className="absolute w-full h-full bg-black/40"></div>
-            <h1 className="font-bold absolute text-xl text-white translate-y-14 top-42">
+            <div className="absolute w-full h-full bg-gradient-to-t from-black/90 to-black/20 via-black/60"></div>
+            <h1 className="font-bold absolute text-xl text-white translate-y-10 top-42">
               Informasi kelas 07TPLE004
             </h1>
           </div>

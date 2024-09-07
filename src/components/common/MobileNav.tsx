@@ -1,6 +1,7 @@
 "use client";
 import Particle from "./Particles";
 import clsx from "clsx";
+import { span } from "framer-motion/client";
 import { useState } from "react";
 export default function MobileNav() {
   const [isOpenNav, setIsOpenNav] = useState<Boolean>(false);
@@ -23,14 +24,22 @@ export default function MobileNav() {
                 "flex text-zinc-200 items-center justify-center text-center align-middle"
               )}
             >
-              {isOpenNav === false ? "..." : "X"}
+              {isOpenNav === false ? (
+                <div className="flex flex-row gap-1 items-center justify-center">
+                  <span className="w-[2px] h-[2px] rounded-full bg-white "></span>
+                  <span className="w-[2px] h-[2px] rounded-full bg-white "></span>
+                  <span className="w-[2px] h-[2px] rounded-full bg-white "></span>
+                </div>
+              ) : (
+                "X"
+              )}
             </span>
           </button>
           <nav
             className={clsx(
               "bg-zinc-800 shadow-3xl shadow-white ring-1 ring-zinc-900 !z-20 transition-all",
               {
-                "w-full h-5/6 rounded-bl-full !z-20 duration-1000 opacity-100 fixed top-0 right-0":
+                "w-full h-full rounded-bl-full !z-20 duration-1000 opacity-100 fixed top-0 right-0":
                   isOpenNav,
                 "w-1 h-1 fixed duration-500 delay-200 -top-5 -right-5":
                   !isOpenNav,
@@ -38,7 +47,7 @@ export default function MobileNav() {
             )}
             onClick={() => setIsOpenNav(!isOpenNav)}
           >
-            {isOpenNav === true ? <Particle/> : ''}
+            {isOpenNav === true ? <Particle /> : ""}
           </nav>
         </div>
       </div>
