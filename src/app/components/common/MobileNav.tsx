@@ -14,7 +14,7 @@ export default function MobileNav() {
           )}
           onClick={() => setIsOpenNav(!isOpenNav)}
         >
-          <span className={clsx("flex text-textDark items-center justify-center text-center align-middle", {'text-textWhite': isOpenNav})}>
+          <span className={clsx("flex text-textDark items-center justify-center text-center align-middle")}>
             {isOpenNav === false ? "..." : "X"}
           </span>
         </button>
