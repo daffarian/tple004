@@ -41,9 +41,13 @@ export default function RootLayout({
               Informasi Perkuliahan Semester 7
             </h1>
           </div>
-          {children}
+          <section className="pt-56 pb-16">
+            <div className="container relative py-5 bg-zinc-900 text-zinc-300 rounded-3xl shadow-xl">
+              {children}
+            </div>
+          </section>
         </main>
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
