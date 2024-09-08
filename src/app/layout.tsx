@@ -37,7 +37,7 @@ export default function RootLayout({
           >
             <div className="absolute w-full h-full bg-gradient-to-t from-black/90 to-black/20 via-black/60"></div>
             <h1 className="font-bold absolute text-xl text-white translate-y-10 top-42">
-              Informasi kelas 07TPLE004
+              Informasi Perkuliahan Semester 7
             </h1>
           </div>
           {children}
