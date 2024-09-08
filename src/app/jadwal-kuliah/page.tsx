@@ -24,7 +24,7 @@ import { Inline, Zoom } from "yet-another-react-lightbox/plugins";
 
 export default function Page() {
   // Light Box State
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const toggleOpen = (state: boolean) => () => setOpen(state);
 
   return (
