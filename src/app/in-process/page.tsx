@@ -3,7 +3,7 @@ export default function Page() {
   return (
     <div className="w-full h-[25rem] flex items-center justify-center">
       <div className="flex flex-col gap-5 items-center justify-center">
-        <span className="font-bold">Maaf fitur masih dalam pengerjaan</span>
+        <span className="font-bold text-md">Maaf fitur masih dalam pengerjaan</span>
         <Image
           src={"/images/hehe.webp"}
           width={100}

@@ -22,6 +22,9 @@ import {
 export default function Home() {
   return (
     <div>
+      <h1 className="font-bold text-xl fixed w-full text-white left-0 -translate-y-20 z-[-1] flex justify-center items-center text-center top-42">
+        Informasi Perkuliahan Semester 7
+      </h1>
       {/* Breadcrumb Start*/}
       <div className="font-medium mb-10 mt-5 container">
         <Breadcrumb>
@@ -37,7 +40,7 @@ export default function Home() {
       </div>
       {/* Breadcrumb Stop */}
       <div className="flex flex-col gap-7 my-5">
-        <Link href={"/in-process"}>
+        <Link href={"/jadwal-kuliah"}>
           <div className=" w-full h-14 border-[1px] border-zinc-300 hover:border-red-400 transition-all font-semibold py-3 px-8 flex flex-row  items-center rounded-full">
             <span className="mr-5">
               <CalendarIcon />
