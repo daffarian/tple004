@@ -18,8 +18,6 @@ import "yet-another-react-lightbox/styles.css";
 import NextJsImage from "@/components/common/NextJsImage";
 import { useState } from "react";
 import image1 from "/public/images/jadwal-e-learning.jpeg";
-import image2 from "/public/images/jadwal-e-learning.jpeg";
-import image3 from "/public/images/jadwal-e-learning.jpeg";
 import { Inline, Zoom } from "yet-another-react-lightbox/plugins";
 
 export default function Page() {
@@ -56,19 +54,28 @@ export default function Page() {
           <h2>Jadwal E - Learning</h2>
           <Lightbox
             close={() => setOpen(false)}
-            slides={[image1, image2, image3]}
-            render={{ slide: NextJsImage }}
+            slides={[image1]}
+            render={{
+              slide: NextJsImage,
+              buttonNext: () => null,
+              buttonPrev: () => null,
+            }}
             className="w-full bg-transparent aspect-video mt-5"
             plugins={[Inline]}
-            carousel={{ imageFit: "cover", padding: 0 }}
+            carousel={{ imageFit: "cover", padding: 0, finite: true }}
             on={{ click: toggleOpen(true) }}
           />
           <Lightbox
             open={open}
             close={() => setOpen(false)}
             slides={[image1]}
-            render={{ slide: NextJsImage }}
+            render={{
+              slide: NextJsImage,
+              buttonNext: () => null,
+              buttonPrev: () => null,
+            }}
             plugins={[Zoom]}
+            carousel={{ finite: true }}
           />
         </div>
       </div>

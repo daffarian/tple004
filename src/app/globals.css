@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Hide lightbox nav */
-.yarl__navigation_prev,
-.yarl__navigation_next,
-.yarl__arrow--right {
-  display: none !important;
-}
 
 h2 {
   @apply font-semibold;
