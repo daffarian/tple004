@@ -19,6 +19,9 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
+// whatsapp
+import Whatsapp from "@/components/common/Whatsapp";
+
 export default function Home() {
   return (
     <div>

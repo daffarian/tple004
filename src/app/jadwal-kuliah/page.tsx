@@ -20,6 +20,12 @@ import { useState } from "react";
 import image1 from "/public/images/jadwal-e-learning.jpeg";
 import { Inline, Zoom } from "yet-another-react-lightbox/plugins";
 
+// utils
+import clsx from "clsx";
+
+// data table here
+import { courseSchedule } from "@/data/jadwalKuliah";
+
 export default function Page() {
   // Light Box State
   const [open, setOpen] = useState(false);
@@ -50,8 +56,10 @@ export default function Page() {
       </div>
       {/* Breadcrumb Stop */}
       <div className="my-5">
+        {/* Jadwal E-Learning Start */}
         <div>
           <h2>Jadwal E - Learning</h2>
+          {/* Image jadwal e-learning */}
           <Lightbox
             close={() => setOpen(false)}
             slides={[image1]}
@@ -65,6 +73,7 @@ export default function Page() {
             carousel={{ imageFit: "cover", padding: 0, finite: true }}
             on={{ click: toggleOpen(true) }}
           />
+          {/* view on image  */}
           <Lightbox
             open={open}
             close={() => setOpen(false)}
@@ -77,7 +86,71 @@ export default function Page() {
             plugins={[Zoom]}
             carousel={{ finite: true }}
           />
+          <a
+            className="text-sm px-3 py-2 rounded-lg border-[1px] mt-5 inline-block"
+            href="https://el-filkom.unpam.ac.id/login/"
+            target="_blank"
+          >
+            Buka E - Learning
+          </a>
         </div>
+        {/* Jadwal E-Learning Stop */}
+
+        {/* Tabel Jadwal Start */}
+        <div className="mt-10">
+          <h2 className="my-5">Jadwal Kuliah</h2>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm text-left text-zinc-300">
+              <thead className="text-xs uppercase bg-zinc-800 text-zinc-200">
+                <tr>
+                  <th scope="col" className="px-6 py-3">
+                    NO
+                  </th>
+                  <th scope="col" className="px-6 py-3">
+                    KODE MK
+                  </th>
+                  <th scope="col" className="px-6 py-3">
+                    MATA KULIAH
+                  </th>
+                  <th scope="col" className="px-6 py-3">
+                    SKS
+                  </th>
+                  <th scope="col" className="px-6 py-3">
+                    KELOMPOK
+                  </th>
+                  <th scope="col" className="px-6 py-3 text-nowrap">
+                    DOSEN
+                  </th>
+                  <th scope="col" className="px-6 py-3">
+                    WAKTU
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {courseSchedule.map((value, index) => (
+                  <tr
+                    className={clsx("", {
+                      "bg-zinc-800": (index + 1) % 2 == 0,
+                    })}
+                  >
+                    <td className="px-6 py-4">{index + 1}</td>
+                    <td className="px-6 py-4 text-nowrap">
+                      {value.kodeMataKuliah}
+                    </td>
+                    <td className="px-6 py-4 text-nowrap">
+                      {value.namaMataKuliah}
+                    </td>
+                    <td className="px-6 py-4">{value.sks}</td>
+                    <td className="px-6 py-4">{value.kelompok}</td>
+                    <td className="px-6 py-4 text-nowrap">{value.dosen}</td>
+                    <td className="px-6 py-4 text-nowrap">{value.waktu}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        {/* Table Jadwal Stop */}
       </div>
     </article>
   );
