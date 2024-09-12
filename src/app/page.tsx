@@ -24,7 +24,7 @@ export default function Home() {
         Informasi Perkuliahan Semester 7
       </h1>
       {/* Breadcrumb Start*/}
-      <div className="font-medium mb-10 mt-5 container">
+      <section className="font-medium mb-10 mt-5 container">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -35,9 +35,9 @@ export default function Home() {
             <BreadcrumbSeparator className="text-zinc-200" />
           </BreadcrumbList>
         </Breadcrumb>
-      </div>
+      </section>
       {/* Breadcrumb Stop */}
-      <div className="flex flex-col gap-7 my-5">
+      <section className="flex flex-col gap-7 my-5">
         <Link href={"/jadwal-kuliah"}>
           <div className=" w-full h-14 border-[1px] border-zinc-300 hover:border-red-400 transition-all font-semibold py-3 px-8 flex flex-row  items-center rounded-full">
             <span className="mr-5">
@@ -74,7 +74,7 @@ export default function Home() {
           </div>
         </Link>
 
-        <Link href={"/in-process"}>
+        <Link href={"/panduan"}>
           <div className=" w-full h-14 border-[1px] border-zinc-300 hover:border-teal-400 transition-all font-semibold py-3 px-8 flex flex-row  items-center rounded-full">
             <span className="mr-5">
               <BookIcon />
@@ -91,7 +91,7 @@ export default function Home() {
             <span>Kontak Dosen</span>
           </div>
         </Link>
-      </div>
+      </section>
     </div>
   );
 }
