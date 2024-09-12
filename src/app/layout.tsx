@@ -43,7 +43,7 @@ export default function RootLayout({
             <div className="absolute w-full h-full bg-gradient-to-t from-black/90 to-black/20 via-black/60"></div>
           </div>
           <div className="pt-56 pb-16">
-            <div className="container relative min-h-[30rem] py-5 bg-zinc-900 text-zinc-300 rounded-3xl shadow-xl">
+            <div className="container relative min-h-[35rem] py-5 bg-zinc-900 text-zinc-300 rounded-3xl shadow-xl">
               {/* Page Component */}
               {children}
             </div>

@@ -1,6 +1,6 @@
 export default function Whatsapp({ className }: { className?: string }) {
   return (
-    <a href="whatsapp://">
+    <a href="https://chat.whatsapp.com/HQ2AV6m1sOxImcPo9tW5H8" target="_blank">
       <div className={`${className} w-8 h-8 flex justify-center items-center`}>
         <div
           className={`w-12 animate-ping absolute  h-12 rounded-full bg-whatsapp`}
