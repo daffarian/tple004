@@ -13,14 +13,9 @@ import BookIcon from "@/components/icons/BookIcon";
 import {
   Breadcrumb,
   BreadcrumbItem,
-  BreadcrumbLink,
   BreadcrumbList,
-  BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-
-// whatsapp
-import Whatsapp from "@/components/common/Whatsapp";
 
 export default function Home() {
   return (

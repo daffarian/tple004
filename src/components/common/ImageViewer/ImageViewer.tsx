@@ -25,7 +25,7 @@ export default function ImageViewer({ className, images }: ImageViewerTypes) {
           buttonNext: () => null,
           buttonPrev: () => null,
         }}
-        className={`${className} w-full aspect-video`}
+        className={`${className} w-full`}
         plugins={[Inline]}
         carousel={{
           imageFit: "cover",
