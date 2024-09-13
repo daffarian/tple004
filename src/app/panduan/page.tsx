@@ -53,7 +53,9 @@ export default async function Page() {
               </Link>
             ))
           ) : (
-            <p>Data tidak ditemukan</p>
+            <div className="flex flex-col w-full h-[20rem] items-center justify-center">
+              <p>Data tidak ditemukan</p>
+            </div>
           )}
         </div>
       </section>
