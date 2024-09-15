@@ -2,15 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
-*{
-  @apply font-semibold;
-}
-
-div, span, h1, h2, h3, h4 {
-  @apply text-zinc-100
+div, span, h1, h2, h3, h4, p, a {
+  @apply text-zinc-100 font-medium
 }
 
 h1{
   @apply text-lg
 }
+
