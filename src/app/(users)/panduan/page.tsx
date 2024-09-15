@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/breadcrumb";
 
 // fetch guides
-import { fetchGuides } from "@/lib/fetchGuides";
+import { fetchGuides } from "@/lib/data/fetchGuides";
 
 // meta data
 import type { Metadata } from "next";

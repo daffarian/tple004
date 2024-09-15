@@ -12,7 +12,14 @@ import {
 // Search
 import Search from "@/components/common/Search";
 
-export default function Page({
+// Table
+import Table from "@/components/common/Table";
+import { guidesColumns } from "@/lib/utils";
+
+// fetch filtered guides
+import { fetchFilteredGuides } from "@/lib/data/fetchGuides";
+
+export default async function Page({
   searchParams,
 }: {
   searchParams?: {
@@ -22,6 +29,10 @@ export default function Page({
 }) {
   const query = searchParams?.query || "";
   const currentPage = Number(searchParams?.page) || 1;
+
+  const guides = await fetchFilteredGuides(query, currentPage);
+  // console.log(guides);
+
   return (
     <div className="container">
       {/* Heading 1 */}
@@ -50,6 +61,14 @@ export default function Page({
         <Search placeholder="Cari panduan..." />
       </section>
       {/* Search Stop */}
+      {/* Table Start */}
+      <Table
+        className="mt-10"
+        type="display"
+        columns={guidesColumns}
+        data={guides}
+      />
+      {/* Table Stop */}
     </div>
   );
 }
