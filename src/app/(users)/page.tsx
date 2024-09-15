@@ -28,16 +28,16 @@ export default function Home() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <Link className="text-zinc-200" href={"/"}>
+              <Link className="text-white" href={"/"}>
                 Beranda
               </Link>
             </BreadcrumbItem>
-            <BreadcrumbSeparator className="text-zinc-200" />
+            <BreadcrumbSeparator className="text-white" />
           </BreadcrumbList>
         </Breadcrumb>
       </section>
       {/* Breadcrumb Stop */}
-      <section className="flex flex-col gap-7 my-5">
+      <section className="flex flex-col gap-7 my-5 text-white">
         <Link href={"/jadwal-kuliah"}>
           <div className=" w-full h-14 border-[1px] border-zinc-700 hover:border-red-400 transition-all font-semibold py-3 px-8 flex flex-row  items-center rounded-full">
             <span className="mr-5">
