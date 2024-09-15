@@ -12,7 +12,7 @@ import {
 // fetch guides
 import { fetchGuides } from "@/lib/fetchGuides";
 
-// meta data 
+// meta data
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Panduan",
@@ -51,10 +51,14 @@ export default async function Page() {
           {guides && guides.length > 0 ? (
             guides.map((value, index) => (
               <Link key={index} href={`/panduan/${value.slug}`}>
-                <div className="flex flex-row justify-between items-center gap-3 border-[1px] border-zinc-700 w-full h-16 p-3 rounded-xl">
+                <div className="flex flex-row justify-between items-center gap-3 border-[1px] border-zinc-700 w-full h-16 p-3 rounded-xl hover:bg-zinc-800 transition">
                   <h2 className="">{value.title}</h2>
-                  <p className="text-sm">
-                    {new Date(value.date).toLocaleDateString('id-ID')}
+                  <p className="text-sm font-thin">
+                    {new Date(value.date).toLocaleDateString("id-ID", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
                   </p>
                 </div>
               </Link>
