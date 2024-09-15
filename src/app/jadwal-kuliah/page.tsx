@@ -1,4 +1,3 @@
-"use client";
 // Link
 import Link from "next/link";
 
@@ -13,12 +12,6 @@ import {
 } from "@/components/ui/breadcrumb";
 
 // Light Box
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
-import NextJsImage from "@/components/common/ImageViewer/NextJsImage";
-import { useState } from "react";
-import image1 from "/public/images/jadwal-e-learning.jpeg";
-import { Inline, Zoom } from "yet-another-react-lightbox/plugins";
 import ImageViewer from "@/components/common/ImageViewer/ImageViewer";
 
 // utils
@@ -27,12 +20,15 @@ import clsx from "clsx";
 // data table here
 import { courseSchedule } from "@/data/jadwalKuliah";
 
-export default function Page() {
-  // Light Box State
-  const [open, setOpen] = useState(false);
-  const toggleOpen = (state: boolean) => () => setOpen(state);
+// meta data 
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Jadwal Kuliah",
+  // description: "Informasi 07TPLE004",
+};
 
-  // src elearning image
+export default function Page() {
+
   const elearningImage = {
     src: "/images/jadwal-e-learning.jpeg",
     alt: "Jadwal E-Learning",

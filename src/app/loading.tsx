@@ -2,7 +2,7 @@ export default function Loading() {
   return (
     <div>
       <div>
-        <div className="-translate-y-14 w-32 h-5 bg-zinc-600 mx-auto animate-pulse rounded-xl"></div>
+        {/* <div className="-translate-y-14 w-32 h-5 bg-zinc-600 mx-auto animate-pulse rounded-xl"></div> */}
         <div className="w-full h-5 bg-zinc-800 rounded-xl animate-pulse mt-5 container"></div>
       </div>
       <div>

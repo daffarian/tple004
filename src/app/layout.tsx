@@ -17,8 +17,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Beranda",
-  description: "Informasi 07TPLE004",
+  title: "Informasi Perkuliahan Semester 7",
+  // description: "Informasi 07TPLE004",
 };
 
 export default function RootLayout({

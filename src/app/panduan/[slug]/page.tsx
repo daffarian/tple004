@@ -46,7 +46,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
       {/* Guid List Start */}
       <section>
         <article
-          className="prose !prose-invert !text-md flex flex-col gap-10 border-[1px] border-zinc-500 p-5 rounded-xl"
+          className="prose !prose-invert !text-md flex flex-col gap-10 border-[1px] border-zinc-700 p-5 rounded-xl"
           dangerouslySetInnerHTML={{ __html: guideBySlug.content }}
         ></article>
       </section>

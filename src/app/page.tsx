@@ -39,7 +39,7 @@ export default function Home() {
       {/* Breadcrumb Stop */}
       <section className="flex flex-col gap-7 my-5">
         <Link href={"/jadwal-kuliah"}>
-          <div className=" w-full h-14 border-[1px] border-zinc-300 hover:border-red-400 transition-all font-semibold py-3 px-8 flex flex-row  items-center rounded-full">
+          <div className=" w-full h-14 border-[1px] border-zinc-700 hover:border-red-400 transition-all font-semibold py-3 px-8 flex flex-row  items-center rounded-full">
             <span className="mr-5">
               <CalendarIcon />
             </span>{" "}
@@ -48,7 +48,7 @@ export default function Home() {
         </Link>
 
         <Link href={"/in-process"}>
-          <div className=" w-full h-14 border-[1px] border-zinc-300 hover:border-blue-400 transition-all font-semibold py-3 px-8 flex flex-row  items-center rounded-full">
+          <div className=" w-full h-14 border-[1px] border-zinc-700 hover:border-blue-400 transition-all font-semibold py-3 px-8 flex flex-row  items-center rounded-full">
             <span className="mr-5">
               <ListChekIcon />
             </span>{" "}
@@ -57,7 +57,7 @@ export default function Home() {
         </Link>
 
         <Link href={"/in-process"}>
-          <div className=" w-full h-14 border-[1px] border-zinc-300 hover:border-green-400 transition-all font-semibold py-3 px-8 flex flex-row  items-center rounded-full">
+          <div className=" w-full h-14 border-[1px] border-zinc-700 hover:border-green-400 transition-all font-semibold py-3 px-8 flex flex-row  items-center rounded-full">
             <span className="mr-5">
               <ReceiptIcon />
             </span>{" "}
@@ -66,7 +66,7 @@ export default function Home() {
         </Link>
 
         <Link href={"/in-process"}>
-          <div className=" w-full h-14 border-[1px] border-zinc-300 hover:border-yellow-400 transition-all font-semibold py-3 px-8 flex flex-row  items-center rounded-full">
+          <div className=" w-full h-14 border-[1px] border-zinc-700 hover:border-yellow-400 transition-all font-semibold py-3 px-8 flex flex-row  items-center rounded-full">
             <span className="mr-5">
               <AwardIcon />
             </span>{" "}
@@ -75,7 +75,7 @@ export default function Home() {
         </Link>
 
         <Link href={"/panduan"}>
-          <div className=" w-full h-14 border-[1px] border-zinc-300 hover:border-teal-400 transition-all font-semibold py-3 px-8 flex flex-row  items-center rounded-full">
+          <div className=" w-full h-14 border-[1px] border-zinc-700 hover:border-teal-400 transition-all font-semibold py-3 px-8 flex flex-row  items-center rounded-full">
             <span className="mr-5">
               <BookIcon />
             </span>{" "}
@@ -84,7 +84,7 @@ export default function Home() {
         </Link>
 
         <Link href={"/in-process"}>
-          <div className=" w-full h-14 border-[1px] border-zinc-300 hover:border-purple-400 transition-all font-semibold py-3 px-8 flex flex-row  items-center rounded-full">
+          <div className=" w-full h-14 border-[1px] border-zinc-700 hover:border-purple-400 transition-all font-semibold py-3 px-8 flex flex-row  items-center rounded-full">
             <span className="mr-5">
               <UserRoundIcon />
             </span>{" "}
