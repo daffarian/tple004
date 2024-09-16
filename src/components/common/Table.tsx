@@ -24,6 +24,13 @@ const Table = <T extends object>({
               {column.label}
             </th>
           ))}
+          {type === "edit" ? (
+            <th scope="col" className="px-6 py-3 text-nowrap">
+              AKSI
+            </th>
+          ) : (
+            ""
+          )}
         </tr>
       </thead>
       <tbody>
@@ -39,6 +46,11 @@ const Table = <T extends object>({
                 {formatValue(row[column.key as keyof T])}
               </td>
             ))}
+            {type === "edit" ? (
+              <td className="px-6 py-4 text-nowrap">BTN</td>
+            ) : (
+              ""
+            )}
           </tr>
         ))}
       </tbody>

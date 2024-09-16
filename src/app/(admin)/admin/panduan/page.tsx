@@ -64,7 +64,7 @@ export default async function Page({
       {/* Table Start */}
       <Table
         className="mt-10"
-        type="display"
+        type="edit"
         columns={guidesColumns}
         data={guides}
       />
