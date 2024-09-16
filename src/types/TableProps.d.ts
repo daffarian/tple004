@@ -1,6 +1,6 @@
 export interface TableProps<T> {
   columns: Column[];
-  data: T[];
+  data?: T[];
   className?: string;
   type: "display" | "edit";
 }

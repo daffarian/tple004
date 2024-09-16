@@ -8,12 +8,6 @@ const Table = <T extends object>({
   className,
   type,
 }: TableProps<T>) => {
-  data.map((values) => {
-    for (const [key, value] of Object.entries(values)) {
-      console.log(`${key}: ${value}`);
-    }
-  });
-
   const formatValue = (value: any) => {
     if (value instanceof Date) {
       return value.toLocaleDateString(); // Format tanggal menjadi string
@@ -40,8 +34,8 @@ const Table = <T extends object>({
             })}
             key={rowIndex}
           >
-            {columns?.map((column) => (
-              <td className="px-6 py-4 text-nowrap">
+            {columns?.map((column, index) => (
+              <td className="px-6 py-4 text-nowrap" key={index}>
                 {formatValue(row[column.key as keyof T])}
               </td>
             ))}
