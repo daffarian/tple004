@@ -17,7 +17,7 @@ const Table = <T extends object>({
 
   return (
     <table className={`w-full text-sm text-left text-zinc-300 ${className}`}>
-      <thead className="text-xs uppercase bg-zinc-800 font-bold text-zinc-200">
+      <thead className="uppercase bg-zinc-800 font-bold text-zinc-200">
         <tr>
           {columns?.map((column) => (
             <th scope="col" className="px-6 py-3 text-nowrap" key={column.key}>

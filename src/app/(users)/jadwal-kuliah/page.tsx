@@ -83,7 +83,7 @@ export default function Page() {
           <h2 className="my-5">Jadwal Kuliah</h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm text-left text-zinc-300">
-              <thead className="text-xs uppercase bg-zinc-800 font-bold text-zinc-200">
+              <thead className="uppercase bg-zinc-800 font-bold text-zinc-200">
                 <tr>
                   <th scope="col" className="px-6 py-3">
                     NO
