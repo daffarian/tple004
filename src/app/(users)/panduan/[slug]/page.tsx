@@ -11,7 +11,7 @@ import {
 
 // fetch guides
 import { fetchGuideBySlug } from "@/lib/data/fetchGuides";
-import { div } from "framer-motion/client";
+
 export default async function Page({ params }: { params: { slug: string } }) {
   const guideBySlug = await fetchGuideBySlug(`${params.slug}`);
   return (

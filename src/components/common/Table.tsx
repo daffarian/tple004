@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import { Column } from "@/types/Column";
 import { TableProps } from "@/types/TableProps";
 
 const Table = <T extends object>({
